@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.section-container {
+  margin-bottom: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.section-image {
+  width: 85%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: #f8f9fa;
+}
+
+.department-col {
+  position: relative;
+  border-right: 2px solid #dee2e6; /* Vertical line */
+  padding: 10px;
+}
+
+.department-col:last-child {
+  border-right: none; /* Remove line for the last column */
+}
+
+.professor-list {
+  border-top: 2px solid #dee2e6; /* Horizontal line above professors */
+  padding-top: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.navbar .form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .form-control {
+  width: 200px;
+}
