@@ -1,0 +1,76 @@
+/* Full-width slideshow */
+.slideshow-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Slideshow-specific styles */
+.slideshow-section {
+  padding-top: 100px; /* Makes sure it starts after the navbar */
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for the university description */
+.university-description {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.university-description .link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.university-description .link:hover {
+  text-decoration: underline;
+}
+
+
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Control the height of the slideshow */
+}
+
+/* Caption styling for the images */
+.caption {
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+/* University description section */
+.university-description {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.university-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.university-description .link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.university-description .link:hover {
+  text-decoration: underline;
+}

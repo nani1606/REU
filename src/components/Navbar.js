@@ -1,40 +1,48 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// src/components/Navbar.js
+import React from 'react';
 
-function NavbarComponent() {
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const handleSearch = () => {
-    alert(`Search for: ${searchQuery}`);
-    // Implement search functionality here
-  };
-
+const Navbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand as={Link} to="/">ABC University Research</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link as={Link} to="#about">About</Nav.Link>
-          <Nav.Link as={Link} to="#lead">Lead Professor</Nav.Link>
-          <Nav.Link as={Link} to="#departments">Departments</Nav.Link>
-          <Nav.Link as={Link} to="#explore">Explore</Nav.Link>
-          <Nav.Link as={Link} to="#apply">Apply Now</Nav.Link>
-        </Nav>
-        <Form inline className="ml-auto">
-          <FormControl
-            type="text"
-            placeholder="Search"
-            className="mr-sm-2"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <Button variant="outline-success" onClick={handleSearch}>Search</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav style={styles.navbar}>
+      <div style={styles.navLeft}>
+        <a href="#top" style={styles.universityName}>University Name</a>
+      </div>
+      <div style={styles.navRight}>
+        <a href="#about" style={styles.navItem}>About</a>
+        <a href="#opportunities" style={styles.navItem}>Opportunities</a>
+        <a href="#apply" style={styles.navItem}>Apply Now</a>
+        <a href="#contact" style={styles.navItem}>Contact Us</a>
+      </div>
+    </nav>
   );
-}
+};
 
-export default NavbarComponent;
+const styles = {
+  navbar: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '10px 20px',
+    backgroundColor: '#333',
+    color: '#fff',
+    position: 'fixed',
+    top: '0',
+    width: '100%',
+    bottom: '20',
+  },
+  universityName: {
+    fontSize: '1.5rem',
+    color: '#fff',
+    textDecoration: 'none',
+  },
+  navRight: {
+    display: 'flex',
+  },
+  navItem: {
+    marginLeft: '20px',
+    color: '#fff',
+    textDecoration: 'none',
+    cursor: 'pointer',
+  }
+};
+
+export default Navbar;

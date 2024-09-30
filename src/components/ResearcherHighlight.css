@@ -1,0 +1,64 @@
+/* General styling for the researcher highlight section */
+.researcher-highlight-container {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #f8f9fa; /* Light background for the section */
+  text-align: left;
+}
+
+/* Layout for researcher info: 30% image, 70% content */
+.researcher-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Styling the researcher image */
+.researcher-image {
+  width: 30%;
+  height: auto;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Styling the researcher details */
+.researcher-details {
+  width: 70%;
+  padding: 20px;
+}
+
+.researcher-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.researcher-details p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Slideshow container for images */
+.slideshow-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Carousel image styling */
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Section heading */
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}

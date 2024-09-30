@@ -11,12 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* src/index.css */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding-top: 70px; /* Adjust this based on the height of your navbar */
-}

@@ -37,63 +37,181 @@
   }
 }
 
-/* General Styles */
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-}
-
-.section-container {
-  margin-bottom: 50px;
+  margin: 0;
   padding: 20px;
-  position: relative;
+  font-family: 'Lato', sans-serif;
+  color: #2c3e50;
+  background-color: #f4f7f6;
+  line-height: 1.6;
 }
 
-.section-image {
-  width: 85%;
-  height: 50%;
-  margin-bottom: 20px;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
 }
 
-.circle-image {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.clickable:hover {
-  background-color: #f8f9fa;
-}
-
-.department-col {
-  position: relative;
-  border-right: 2px solid #dee2e6; /* Vertical line */
-  padding: 10px;
-}
-
-.department-col:last-child {
-  border-right: none; /* Remove line for the last column */
-}
-
-.professor-list {
-  border-top: 2px solid #dee2e6; /* Horizontal line above professors */
-  padding-top: 20px;
-}
-
+/* Navbar styles */
 .navbar {
-  margin-bottom: 20px;
-}
-
-/* Search bar styling */
-.navbar .form-inline {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps navbar on top */
+  background-color: #fff; /* White background for the navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  padding: 15px 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.navbar .form-control {
-  width: 200px;
+.navbar a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure no overflow from the navbar */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global section styles to avoid overlapping with the navbar */
+section {
+  padding-top: 100px; /* Adjust padding based on the height of your navbar */
+  margin: 20px 0;
+}
+
+/* Researcher Section */
+.researcher-container {
+  text-align: center;
+  margin: 60px 0;
+  padding: 0 15%;
+}
+
+.researcher-container img {
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.researcher-container p {
+  font-size: 18px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Opportunities Section */
+.opportunities {
+  text-align: center;
+  margin: 40px 0;
+  background-color: #ecf0f1;
+  padding: 40px 0;
+}
+
+.opportunities h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.opportunities .departments {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.opportunities .department {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.opportunities .department:hover {
+  transform: translateY(-5px);
+}
+
+/* Apply Now Section */
+.apply-now {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.apply-now button {
+  padding: 14px 28px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-now button:hover {
+  background-color: #1a5981;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #bdc3c7;
+}
+
+/* Form Inputs and Textareas */
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a5981;
 }

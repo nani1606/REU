@@ -1,40 +1,24 @@
-import React, { useState } from 'react';
-import './App.css';
+// src/App.js
+import React from 'react';
 import Navbar from './components/Navbar';
-import About from './components/About';
-import LeadProfessor from './components/LeadProfessor';
-import Departments from './components/Departments';
-import ExploreDepartments from './components/ExploreDepartments';
+import Slideshow from './components/Slideshow';
+import ResearcherHighlight from './components/ResearcherHighlight';
+import Opportunities from './components/Opportunities';
 import ApplyNow from './components/ApplyNow';
+import About from './components/About';
 import Footer from './components/Footer';
-import SearchResults from './components/SearchResults';
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState('');
-
   return (
-    <>
-      <Navbar setSearchQuery={setSearchQuery} />
-      <div className="section-container">
-        <img src="path/to/university-image.jpg" alt="University" className="section-image" />
-        <About />
-      </div>
-      <div className="section-container">
-        <img src="path/to/professor-image.jpg" alt="Lead Professor" className="section-image" />
-        <LeadProfessor />
-      </div>
-      <div className="section-container">
-        <img src="path/to/departments-image.jpg" alt="Departments" className="section-image" />
-        <Departments />
-      </div>
-      <div className="section-container">
-        <img src="path/to/explore-image.jpg" alt="Explore Departments" className="section-image" />
-        <ExploreDepartments />
-      </div>
+    <div className="App">
+      <Navbar />
+      <Slideshow />
+      <ResearcherHighlight />
+      <Opportunities />
       <ApplyNow />
-      <SearchResults query={searchQuery} />
+      <About />
       <Footer />
-    </>
+    </div>
   );
 }
 
