@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/REU/static/css/main.b8506df7.css",
+    "main.js": "/REU/static/js/main.963f2a30.js",
+    "static/js/453.2cb265ab.chunk.js": "/REU/static/js/453.2cb265ab.chunk.js",
+    "index.html": "/REU/index.html",
+    "main.b8506df7.css.map": "/REU/static/css/main.b8506df7.css.map",
+    "main.963f2a30.js.map": "/REU/static/js/main.963f2a30.js.map",
+    "453.2cb265ab.chunk.js.map": "/REU/static/js/453.2cb265ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8506df7.css",
+    "static/js/main.963f2a30.js"
+  ]
+}
